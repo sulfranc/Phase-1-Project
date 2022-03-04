@@ -1,0 +1,53 @@
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #595c91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin:  1;
+  }
+  
+  .outcomes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .outcome{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+  }
+  
+  .outcome img{
+    object-fit: fill;
+    height: 500px;
+    width: 500px;
+  }
+  
+  .button{
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  
+  button{
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background-color: white;
+    font-size: larger;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+  }
+  
+  
+  
+  
