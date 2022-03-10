@@ -1,11 +1,13 @@
 const picture = document.getElementById('picture');
 const likepic_btn = document.getElementById('likepic_btn');
 const dislikepic_btn = document.getElementById('dislikepic_btn');
+const submitel = document.getElementById('submit')
 let likeCount = 0
 let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
+    submit()
 });
 likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
@@ -40,8 +42,10 @@ function getPic(){ // gets pics from api
         getPic()
     }
 
-    function submit(){
-        
+    function comment(){
+        let submitbtn = document.createElement('form')
+        submitel.appendChild(submitbtn)
+
     }
 
 
