@@ -7,23 +7,22 @@ let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
-    catCommet()
-    
+    commentForm.addEventListener('submit',catCommet)    
 });
 likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
 
 
+
 function catCommet(){
-    commentForm.addEventListener('submit'),() =>{
+    
         let comment = document.createElement('p')
+        let commentText =  commentForm.innerHTML
         document.querySelector('userinputs').appendChild(comment)
-        comment.innerHTML = commentForm.textContent
+      
+        console.log(commentText)
 
 
-
-
-    }
 }
 
 
