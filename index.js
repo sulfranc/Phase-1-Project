@@ -8,6 +8,7 @@ let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
+    catCommet()
     
 });
 likepic_btn.addEventListener('click', likeCounter )
@@ -19,6 +20,7 @@ function catCommet(){
         let formComment = commentForm.innerHTML
         let newComment = oldComment.innerHTML
         let formComment = newComment
+        commentForm.innerHTML = oldComment.innerHTML
 
 
 
