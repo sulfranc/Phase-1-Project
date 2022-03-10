@@ -1,7 +1,8 @@
 const picture = document.getElementById('picture');
 const likepic_btn = document.getElementById('likepic_btn');
 const dislikepic_btn = document.getElementById('dislikepic_btn');
-const formtEl = document.getElementById('comment')
+const commentForm = document.getElementById('comment')
+const oldComment = document.getElementById('oldcomments')
 let likeCount = 0
 let dislikeCount = 0
 
@@ -14,8 +15,13 @@ dislikepic_btn.addEventListener('click', dislikeCounter)
 
 
 function catCommet(){
-    formtEl.addEventListener('submit'),() =>{
-        
+    commentForm.addEventListener('submit'),() =>{
+        let formComment = commentForm.innerHTML
+        let newComment = oldComment.innerHTML
+        let formComment = newComment
+
+
+
     }
 }
 
