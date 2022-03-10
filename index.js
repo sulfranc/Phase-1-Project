@@ -7,8 +7,9 @@ let dislikeCount = 0
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
 });
-likepic_btn.addEventListener('click', getPicgi )
+likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
+
 
 
 
@@ -29,6 +30,19 @@ function getPic(){ // gets pics from api
 
     function dislikeCounter(){
         dislikeCount++
-        dislikepic_btn.innerHTML = `DisLike👍 ${dislikeCount}`
+        dislikepic_btn.innerHTML = `DisLike👎 ${dislikeCount}`
         getPic()
     }
+
+    function likeCounter(){
+        likeCount++
+        likepic_btn.innerHTML = `Like👍 ${likeCount}`
+        getPic()
+    }
+
+    function submit(){
+        
+    }
+
+
+
