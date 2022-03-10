@@ -17,10 +17,10 @@ dislikepic_btn.addEventListener('click', dislikeCounter)
 
 function catCommet(){
     commentForm.addEventListener('submit'),() =>{
-        let formComment = commentForm.innerHTML
-        let newComment = oldComment.innerHTML
-        let formComment = newComment
-        commentForm.innerHTML = oldComment.innerHTML
+        let comment = document.createElement('p')
+        document.querySelector('userinputs').appendChild(comment)
+        comment.innerHTML = commentForm.innerHTML
+
 
 
 
