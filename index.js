@@ -1,19 +1,23 @@
 const picture = document.getElementById('picture');
 const likepic_btn = document.getElementById('likepic_btn');
 const dislikepic_btn = document.getElementById('dislikepic_btn');
-const submitel = document.getElementById('submit')
+const formtEl = document.getElementById('comment')
 let likeCount = 0
 let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
-    comment()
+    
 });
 likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
 
 
-
+function catCommet(){
+    formtEl.addEventListener('submit'),() =>{
+        
+    }
+}
 
 
 function getPic(){ // gets pics from api
@@ -42,12 +46,6 @@ function getPic(){ // gets pics from api
         getPic()
     }
 
-    function comment(){
-        let form = document.createElement('form')
-        submitel.appendChild(form)
-        let catComments = form.elements['comments']
-
-    }
-
+    
 
 

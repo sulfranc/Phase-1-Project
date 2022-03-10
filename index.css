@@ -48,6 +48,19 @@ body {
     font-weight: bold;
   }
   
+  .userinput{
+    font-size: large;
+    width: 500px
+    align-align-content: center;
+
+  }
+
+  .oldcomment{
+    font-family: 'PT Serif', serif;
+    font-size: larger;
+    font-weight: bold;
+
+  }
   
   
   
