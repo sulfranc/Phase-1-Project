@@ -2,7 +2,6 @@ const picture = document.getElementById('picture');
 const likepic_btn = document.getElementById('likepic_btn');
 const dislikepic_btn = document.getElementById('dislikepic_btn');
 const commentForm = document.getElementById('comment')
-const oldComment = document.getElementById('oldcomments')
 let likeCount = 0
 let dislikeCount = 0
 
@@ -19,7 +18,7 @@ function catCommet(){
     commentForm.addEventListener('submit'),() =>{
         let comment = document.createElement('p')
         document.querySelector('userinputs').appendChild(comment)
-        comment.innerHTML = commentForm.innerHTML
+        comment.innerHTML = commentForm.textContent
 
 
 
