@@ -7,7 +7,7 @@ let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
-    submit()
+    comment()
 });
 likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
@@ -43,8 +43,9 @@ function getPic(){ // gets pics from api
     }
 
     function comment(){
-        let submitbtn = document.createElement('form')
-        submitel.appendChild(submitbtn)
+        let form = document.createElement('form')
+        submitel.appendChild(form)
+        let catComments = form.elements['comments']
 
     }
 
