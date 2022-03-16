@@ -2,7 +2,7 @@ const picture = document.getElementById('picture');
 const likepic_btn = document.getElementById('likepic_btn');
 const dislikepic_btn = document.getElementById('dislikepic_btn');
 const commentForm = document.getElementById('comment')
-const commentText = document.getElementById("commenttext")
+
 
 let likeCount = 0
 let dislikeCount = 0
@@ -10,10 +10,9 @@ let dislikeCount = 0
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
    
-    commentForm.addEventListener('submit',function(event){
+    commentForm.addEventListener('submit',function(event){ // add user input to screen
         event.preventDefault()
         let catCommennts = event.target.commettext.value
-        console.log(catCommennts)
         let commentBox = document.createElement('p')
         commentBox.textContent = catCommennts
         document.getElementById('userinputs').appendChild(commentBox)
