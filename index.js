@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
    
     commentForm.addEventListener('submit',function(event){
-        event.preventDefault
+        event.preventDefault()
         let catCommennts = event.target.commettext.value
         console.log(catCommennts)
         let commentBox = document.createElement('p')
