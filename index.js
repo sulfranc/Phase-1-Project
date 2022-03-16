@@ -11,27 +11,34 @@ let dislikeCount = 0
 
 document.addEventListener('DOMContentLoaded', () => {
     getPic() // makes img appear when page loads
-    //commentForm.addEventListener('submit',logSubmit)    
+    //commentForm.addEventListener('submit',logSubmit)
+    
+    commentForm.addEventListener('submit',function(event){
+        event.preventDefault
+        console.log(event.target.commettext.value)
+        
+        //commentText.innerHTML= "yo "
+    
+       // let Katcomments = event.target.commenttext.value)
+            
+    
+    })
 });
 likepic_btn.addEventListener('click', likeCounter )
 dislikepic_btn.addEventListener('click', dislikeCounter) 
 
 
 
-commentForm.addEventListener('submit',function(event){
-    event.preventDefault
-
-    commentText.innerHTML = "yo"
-
-    let Katcomments = commentForm.innerHTML
-    console.log(Katcomments)
+//commentForm.addEventListener('submit',function(event){
+   // event.preventDefault
+    //debugger
+   // console.log(event.target.commentText)
     
-    
+    //commentText.innerHTML= "yo "
 
+   // let Katcomments = event.target.commenttext.value)
         
-        
-
-})
+//})
 
 
 function getPic(){ // gets pics from api
